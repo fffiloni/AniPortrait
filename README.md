@@ -89,7 +89,13 @@ The changes & additions to the original project are as follows:
 
 ### Build environment
 
-We recommend a python version >=3.10 and cuda version =11.7. Then build environment as follows:
+We recommend a Python version >=3.10 and a Cuda version =11.7. Then, build the environment as follows:
+
+Create a conda environment:
+```shell
+conda create -n AniPortrait python=3.10
+conda activate AniPortrait
+```
 
 ```shell
 pip install -r requirements.txt
@@ -144,7 +150,18 @@ Finally, these weights should be organized as follows:
 
 Note: If you have installed some of the pretrained models, such as `StableDiffusion V1.5`, you can specify their paths in the config file (e.g. `./config/prompts/animation.yaml`).
 
-## Inference
+## Gradio UI Start (Vid2Vid Inference)
+
+From AniPortrait Root Dir, enable conda env if it's not:
+```shell
+conda activate AniPortrait
+```
+Start Gradio UI App:
+```shell
+python app.py
+```
+
+## Command Line Inference (disregard if only using Gradio UI)
 
 Here are the cli commands for running inference scripts:
 
