@@ -97,20 +97,20 @@ pip install -r requirements.txt
 
 ### Download weights
 
-All the weights should be placed under the `./pretrained_weights` direcotry. You can download weights manually as follows:
+All the weights should be placed under the `./pretrained_model` directory. You can download weights manually as follows:
 
-1. Download our trained [weights](https://huggingface.co/ZJYang/AniPortrait/tree/main), which include four parts: `denoising_unet.pth`, `reference_unet.pth`, `pose_guider.pth`, `motion_module.pth` and `audio2mesh.pt`.
+1. Download our trained [models](https://huggingface.co/ZJYang/AniPortrait/tree/main), which include four parts: `denoising_unet.pth`, `reference_unet.pth`, `pose_guider.pth`, `motion_module.pth` and `audio2mesh.pt`.
 
-2. Download pretrained weight of based models and other components: 
+2. Download pretrained models of based models and other components: 
     - [StableDiffusion V1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
     - [sd-vae-ft-mse](https://huggingface.co/stabilityai/sd-vae-ft-mse)
     - [image_encoder](https://huggingface.co/lambdalabs/sd-image-variations-diffusers/tree/main/image_encoder)
     - [wav2vec2-base-960h](https://huggingface.co/facebook/wav2vec2-base-960h)
 
-Finally, these weights should be orgnized as follows:
+Finally, these weights should be organized as follows:
 
 ```text
-./pretrained_weights/
+./pretrained_model/
 |-- image_encoder
 |   |-- config.json
 |   `-- pytorch_model.bin
