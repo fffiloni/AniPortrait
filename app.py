@@ -119,5 +119,5 @@ with gr.Blocks(title="AniPortrait") as blocks_app:
     )
 
 if __name__ == "__main__":
-    blocks_app.launch(share=True)
+    blocks_app.queue(max_size=3).launch(share=False, show_error=True, show_api=False)
  
